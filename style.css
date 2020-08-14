@@ -140,18 +140,50 @@ body {
   from {left: 100px;}
   to{left: 0px;}
 }
+@media(max-width: 576px) {
+	 #photo {
+		position: relative;
+		animation-name: photo;
+		animation-duration: 4s;
+		right: 30px;
+	}
 
-#photo {
+	@keyframes photo {
+	  from {right:0px;}
+	  to{right: 30px;}
+	}
+}
+@media(min-width: 576px){
+	#photo {
 	position: relative;
 	animation-name: photo;
 	animation-duration: 4s;
 	right: 100px;
+	}
+
+	@keyframes photo {
+	  from {right:0px;}
+	  to{right: 100px;}
+	}
 }
 
-@keyframes photo {
-  from {right:0px;}
-  to{right: 100px;}
+#try {
+	opacity: 0;
+	animation-name: try;
+  	animation-duration: 3s;
+  	animation-timing-function: ease-in;
+  	animation-delay: 2s;
+  	animation-iteration-count: 3;
 }
+@keyframes try {
+  0%   {opacity: 0;}
+  
+  75%  {opacity: 1;}
+  
+  100% {opacity: 0;}
+}
+
+
 
 
 .btn-social-icon {
