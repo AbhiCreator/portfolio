@@ -1,0 +1,194 @@
+
+a {
+	text-decoration: none;
+	color: green;
+}
+
+.navbar-brand{
+	font-family: OCR A Std, monospace;
+}
+.jumbotron {
+	padding: 70px 30px 70px 30px;
+	margin: 0px auto;
+	background-color: #242582;
+	color: floralwhite;
+}
+.jumbotron h1 {
+	font-family:Bookman, URW Bookman L, serif; 
+}
+
+.row-content {
+	margin: 0px auto;
+	margin-bottom: 10px;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px ridge;
+	min-height: 300px;
+	border-radius: 5px;
+	background-color: #d7d7f4; 
+} 
+
+.row-content1 {
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 400px; 
+}
+
+#btn {
+	display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    background-color: #842484;
+    color: white;
+    font-weight: bold;
+    font-family: Bradley Hand, cursive;
+    transition: all 0.5s;
+    cursor: pointer;
+  
+}
+
+
+#btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btn:hover span {
+  padding-right: 25px;
+}
+
+#btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+body {
+	padding: 50px 0px 0px 0px;
+	z-index: 0;
+	background-color: #4b4dce;
+}
+
+.navbar-dark {
+	background-color: #2F2FA2;
+}
+
+
+.tab-content {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+
+.row-header {
+	margin-top: 0px;
+}
+
+#show,#p {
+	opacity: 0;
+	animation-name: showing;
+  	animation-duration: 4s;
+  	animation-timing-function: ease-in;
+  	/*animation-delay: -2s;*/
+}
+
+@keyframes showing {
+  0%   {opacity: 0;}
+  
+  75%  {opacity: 1;}
+  
+  100% {opacity: 0;}
+}
+
+#name,#text2 {
+	position: relative;
+    animation-name: mymove;
+	animation-duration: 4s;
+	
+}
+#text2 {
+	animation-delay: 2s;
+}
+
+@keyframes mymove {
+  from {right: 100px;}
+  to{right: 0px;}
+}
+
+#text1,#text3 {
+	position: relative;
+    animation-name: mymov;
+	animation-duration: 4s;
+}
+#text3 {
+	animation-delay: 4s;
+}
+
+@keyframes mymov {
+  from {left: 100px;}
+  to{left: 0px;}
+}
+
+#photo {
+	position: relative;
+	animation-name: photo;
+	animation-duration: 4s;
+	right: 100px;
+}
+
+@keyframes photo {
+  from {right:0px;}
+  to{right: 100px;}
+}
+
+
+.btn-social-icon {
+	margin-right: 20px;
+}
+
+#social {
+	min-height: 200px;
+}
+
+.breadcrumb {
+	background-color:  #7375D9;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+.btn-facebook,.btn-linkedin,.btn-twitter{
+	position: relative;
+	animation-name: social;
+	animation-duration: 4s;
+}
+
+
+@keyframes social {
+  from {left:200px;}
+  to{left: 0px;}
+}
+
+#asd {
+	color: black;
+}
+.card-header {
+	background-color: #832ca0;
+}
+
+.footer {
+	margin: 0px auto;
+	padding: 20px 0px 20px 0px;
+}
